@@ -14,6 +14,19 @@
 - 🤖 **AI驱动**：使用Claude AI分析文本内容
 - 📊 **输出**：结构化的CSV格式结果
 
+## 📋 执行顺序
+
+本项目包含3个主要脚本，**请严格按照数字顺序执行**：
+
+1. **`1_test_sdk.py`** - 验证SDK和环境是否正确配置
+2. **`2_extract_keywords.py`** - 执行多线程关键词提取任务
+3. **`3_display_results.py`** - 展示和分析提取结果
+
+💡 **为什么要按顺序执行？**
+- 步骤1确保环境配置正确，避免后续错误
+- 步骤2生成 `result.csv` 文件，步骤3需要读取此文件
+- 循序渐进的执行方式帮助理解整个工作流程
+
 ## 📁 项目结构
 
 ```
@@ -29,9 +42,9 @@ claude-code-python-wrapper-sample/
 │   ├── blog-8.md         # 地铁站的小提琴手
 │   ├── blog-9.md         # 修钟表的爷爷
 │   └── blog-10.md        # 天台上的星空课
-├── extract_keywords.py    # 🚀 主程序：多线程关键词提取
-├── test_sdk.py           # 🧪 SDK测试脚本
-├── display_results.py    # 📊 结果展示脚本
+├── 1_test_sdk.py         # 🧪 步骤1：SDK测试脚本
+├── 2_extract_keywords.py # 🚀 步骤2：多线程关键词提取
+├── 3_display_results.py  # 📊 步骤3：结果展示脚本
 ├── requirements.txt       # 📦 项目依赖
 ├── README.md             # 📄 本文档
 └── result.csv            # 📈 输出结果（运行后生成）
@@ -68,24 +81,26 @@ cd claude-code-python-wrapper-sample
 pip install -r requirements.txt
 ```
 
-3. **测试环境**
+### 按序执行（重要）
+
+⚠️ **请按照以下顺序执行脚本，每个步骤都很重要！**
+
+1. **步骤1：测试SDK环境**
 
 ```bash
-python test_sdk.py
+python 1_test_sdk.py
 ```
 
-### 运行示例
-
-1. **执行关键词提取**
+2. **步骤2：执行关键词提取**
 
 ```bash
-python extract_keywords.py
+python 2_extract_keywords.py
 ```
 
-2. **查看结果**
+3. **步骤3：查看结果**
 
 ```bash
-python display_results.py
+python 3_display_results.py
 ```
 
 ## 📊 输出结果
