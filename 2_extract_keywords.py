@@ -15,7 +15,6 @@ from claude_cli import ClaudeCLI, ClaudeOptions
 BLOGS_DIR = Path("blogs")
 OUTPUT_FILE = "result.csv"
 NUM_THREADS = 2
-KEYWORDS_PER_BLOG = 3
 
 # 创建任务队列
 task_queue = queue.Queue()

@@ -16,16 +16,14 @@
 
 ## 📋 执行顺序
 
-本项目包含3个主要脚本，**请严格按照数字顺序执行**：
+本项目包含2个主要脚本，**请严格按照数字顺序执行**：
 
 1. **`1_test_sdk.py`** - 验证SDK和环境是否正确配置
 2. **`2_extract_keywords.py`** - 执行多线程关键词提取任务
-3. **`3_display_results.py`** - 展示和分析提取结果
 
 💡 **为什么要按顺序执行？**
 - 步骤1确保环境配置正确，避免后续错误
-- 步骤2生成 `result.csv` 文件，步骤3需要读取此文件
-- 循序渐进的执行方式帮助理解整个工作流程
+- 步骤2生成 `result.csv` 文件，可直接查看提取结果
 
 ## 📁 项目结构
 
@@ -44,10 +42,8 @@ claude-code-python-wrapper-sample/
 │   └── blog-10.md        # 天台上的星空课
 ├── 1_test_sdk.py         # 🧪 步骤1：SDK测试脚本
 ├── 2_extract_keywords.py # 🚀 步骤2：多线程关键词提取
-├── 3_display_results.py  # 📊 步骤3：结果展示脚本
 ├── requirements.txt       # 📦 项目依赖
-├── README.md             # 📄 本文档
-└── result.csv            # 📈 输出结果（运行后生成）
+└── README.md             # 📄 本文档
 ```
 
 ## ✨ 功能特性
@@ -57,7 +53,6 @@ claude-code-python-wrapper-sample/
 - 📊 **结构化输出**：结果保存为CSV格式，便于后续分析
 - 🛡️ **错误处理**：完善的异常处理和重试机制
 - 📈 **进度监控**：实时显示处理进度和结果统计
-- 🔍 **结果可视化**：提供结果展示脚本
 
 ## 🚀 快速开始
 
@@ -97,11 +92,7 @@ python 1_test_sdk.py
 python 2_extract_keywords.py
 ```
 
-3. **步骤3：查看结果**
-
-```bash
-python 3_display_results.py
-```
+执行完成后，可直接查看生成的 `result.csv` 文件来查看关键词提取结果。
 
 ## 📊 输出结果
 

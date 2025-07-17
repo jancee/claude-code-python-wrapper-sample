@@ -91,10 +91,43 @@ temp/
 tmp/
 
 # Results and cache
-result_*.csv
+result.csv
+result_backup*.csv
+result_temp*.csv
+result_test*.csv
 cache/
 logs/
 
 # Backup files
 *.bak
 *.backup
+
+# Claude CLI and project specific
+.claude/
+claude.json
+.claude.json
+
+# Sample project specific
+blogs/blog-*.bak
+blogs/*_backup.md
+output/
+results/
+extracted_keywords_*.csv
+keywords_*.json
+
+# User generated test files
+test_blog*.md
+sample_*.csv
+debug_*.txt
+user_test_*
+
+# OS specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Network files
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
