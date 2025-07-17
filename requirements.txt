@@ -1,1 +1,1 @@
-claude-code-python-wrapper>=0.1.0
+claude-code-python-wrapper>=0.3.0
